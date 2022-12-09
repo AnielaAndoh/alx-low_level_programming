@@ -1,13 +1,6 @@
-#include <studio.h>
-
-/**
- * main - Entry Point
+#include <stdio.h>
+/*
+ * main - print a line of code using puts
  *
- * Return: Always 0 (Sucess)
- */	
-
-int main(void)
-{	
-	puts(*\"Programming is like building a multilingual puzzle");
-	return(0);
-}
+ * Return: 0
+ * /
