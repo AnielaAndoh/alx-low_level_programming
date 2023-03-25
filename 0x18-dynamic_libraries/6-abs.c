@@ -1,15 +1,12 @@
-#include "main.h"
+#include <stdlib.h>
 
 /**
- *_abs - Computes the absolute value of an integer.
- * @n: The integer to be computed.
- *
- * Return: The absolute value of the integer.
+ * _abs - checks if character is lower or upper
+ * @c: takes input to function
+ * Return: Always 0 (Success)
  */
-int _abs(int n)
+int _abs(int c)
 {
-	if (n >= 0)
-		return (n);
-	else
-		return (-n);
+	return (abs(c));
 }
+

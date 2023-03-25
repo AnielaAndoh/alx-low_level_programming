@@ -1,26 +1,15 @@
 #include "main.h"
+#include <string.h>
 
 /**
- * _strcat - concat 2 string
- * @dest:char
- * @src:char
- * Return:char
+ * _strcat - resets value of n to 98
+ * @dest: destination string
+ * @src: source string
+ *
+ * Return: void.
  */
 char *_strcat(char *dest, char *src)
 {
-	char *s = dest;
-
-	while (*dest != '\0')
-	{
-		dest++;
-	}
-
-	while (*src != '\0')
-	{
-		*dest = *src;
-		dest++;
-		src++;
-	}
-	*dest = '\0';
-	return (s);
+	return (strcat(dest, src));
 }
+

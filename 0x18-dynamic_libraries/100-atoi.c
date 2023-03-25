@@ -1,40 +1,30 @@
 #include "main.h"
+#include <string.h>
 
 /**
- * _atoi - Convert a string to an integer.
- * @s: The pointer to convert
- *
- * Return: A integer
- */
+  * _atoi - Prints the sum of all multiples of 3 or 5 up to 1024
+  * @s: string pointer to function
+  * Return: Always (Success)
+  */
 int _atoi(char *s)
 {
-	int c = 0;
-	unsigned int ni = 0;
+	int j = 0;
+	unsigned int  a = 0;
 	int min = 1;
-	int isi = 0;
+	int chk = 0;
+	int len = strlen(s);
 
-	while (s[c])
+	for (j = 0; j < len; j++)
 	{
-		if (s[c] == 45)
-		{
-			min *= -1;
-		}
-
-		while (s[c] >= 48 && s[c] <= 57)
-		{
-			isi = 1;
-			ni = (ni * 10) + (s[c] - '0');
-			c++;
-		}
-
-		if (isi == 1)
-		{
-			break;
-		}
-
-		c++;
+	if (s[j] == 45)
+		min *= -1;
+	if (s[j] >= 48 && s[j] <= 57)
+	{
+		chk = 1;
+		a = (a * 10) + (s[j] - '0') * min;
 	}
-
-	ni *= min;
-	return (ni);
+	if (chk == 1 && s[j] == ' ')
+		break;
+	}
+	return (a);
 }

@@ -1,16 +1,12 @@
 #include "main.h"
+#include <string.h>
+
 /**
- * _strlen - return the length of a string
- * Owned By Aniela
- * @s: char to check
- * Description: this will return the length of a string
- * Return: 0 is success
+ * _strlen - resets value of n to 98
+ * @s: character input to function
+ * Return: void.
  */
 int _strlen(char *s)
 {
-	int a = 0;
-
-	for (; *s++;)
-		a++;
-	return (a);
+	return (strlen(s));
 }
